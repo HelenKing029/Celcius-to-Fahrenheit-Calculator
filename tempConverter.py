@@ -1,6 +1,8 @@
-def temperature(f):
-    f = float(celcius) * 9/5 + 32
+def cTof(celsius):
+    f = float(celsius) * 9/5 + 32
     return (f)
 
-celcius = input("Enter temperature in Celcius: ")
-print(temperature(23))
+celsius = float(input("Enter temperature in celsius: "))
+if celsius < float(-273.15):
+    print("That's colder than physical matter can reach!")
+else: print(cTof(celsius))
